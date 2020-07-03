@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellReuseIdentifier" rowHeight="79" id="Mee-eV-xz6" customClass="CustomTableViewCell" customModule="FirstApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="672" height="79"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Mee-eV-xz6" id="xRb-iZ-Ouz">
+                <rect key="frame" x="0.0" y="0.0" width="672" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TFO-bQ-SF9">
+                        <rect key="frame" x="8" y="8" width="656" height="63"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycZ-48-JiP">
+                                <rect key="frame" x="8" y="21" width="640" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ycZ-48-JiP" firstAttribute="leading" secondItem="TFO-bQ-SF9" secondAttribute="leading" constant="8" id="8to-xD-Rv3"/>
+                            <constraint firstItem="ycZ-48-JiP" firstAttribute="centerY" secondItem="TFO-bQ-SF9" secondAttribute="centerY" id="EXL-ch-cpp"/>
+                            <constraint firstAttribute="trailing" secondItem="ycZ-48-JiP" secondAttribute="trailing" constant="8" id="Hyt-xU-UEQ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="TFO-bQ-SF9" secondAttribute="trailing" constant="8" id="Cgt-li-75Y"/>
+                    <constraint firstItem="TFO-bQ-SF9" firstAttribute="top" secondItem="xRb-iZ-Ouz" secondAttribute="top" constant="8" id="UAR-aR-yWT"/>
+                    <constraint firstAttribute="bottom" secondItem="TFO-bQ-SF9" secondAttribute="bottom" constant="8" id="bsW-Ho-U0D"/>
+                    <constraint firstItem="TFO-bQ-SF9" firstAttribute="leading" secondItem="xRb-iZ-Ouz" secondAttribute="leading" constant="8" id="ia7-wF-vaY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="label" destination="ycZ-48-JiP" id="0OP-Yq-iaC"/>
+                <outlet property="view" destination="TFO-bQ-SF9" id="xJJ-GF-WRe"/>
+            </connections>
+            <point key="canvasLocation" x="50.724637681159422" y="119.53125"/>
+        </tableViewCell>
+    </objects>
+</document>
